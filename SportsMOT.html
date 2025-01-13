@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>SportsMOT Dataset</title>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="author" content="">
+	    <meta name="keywords" content="">
+	    <meta name="description" content="">
+
+	    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
+	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<!-- script
+		================================================== -->
+		<script src="js/modernizr.js"></script>
+
+
+	</head>
+
+<body>
+
+<div id="header-wrap">
+	<header id="header">
+		<div class="container">
+			<div class="inner-content">
+				<div class="grid">
+					<div class="main-logo">
+						<a href="index.html"><img src="pics/sv.png" alt="logo"></a>
+					</div>
+
+					<nav id="navbar">
+						<div class="main-menu">
+							<ul class="menu-list">
+								<li class="menu-item"><a href="index.html" data-effect="Home">Home</a></li>
+								<li class="menu-item"><a href="SportsAction.html" data-effect="About">SportsAction</a></li>
+								<li class="menu-item active"><a href="SportsMOT.html" class="active" data-effect="Services">SportsMOT</a></li>
+								<li class="menu-item"><a href="SportsHHI.html" data-effect="Projects">SportsHHI</a></li>
+								<li class="menu-item"><a href="SportsShot.html" data-effect="Latest Blog">SportsShot</a></li>
+								<li class="menu-item"><a href="SportsGrounding.html" data-effect="Testimonial">SportsGrounding</a></li>
+								<!-- <li class="menu-item "><a href="https://templatesjungle.gumroad.com/l/creatify-digital-marketing-website-template" class="nav-link" > <b> GET PRO </b> </a></li> -->
+							</ul>
+
+							<div class="hamburger">
+				                <span class="bar"></span>
+				                <span class="bar"></span>
+				                <span class="bar"></span>
+				            </div>
+						</div>											
+					
+						<!-- <a href="#" class="btn-hvr-effect">
+							<span>Let's Talk</span>
+							<i class="icon icon-long-arrow-right"></i>
+						</a> -->
+						<!--search-bar-->
+
+					</nav>
+
+				</div>
+			</div>
+		</div>
+	</header>		
+</div><!--header-wrap-->
+
+<section id="billboard">
+	<div class="main-banner pattern-overlay">
+		<div class="banner-content" data-aos="fade-up">
+			<h3 class="banner-title">SportsMOT Dataset</h3>
+		    <h2 class="section-subtitle ">SportsMOT: A Large Multi-Object Tracking Dataset in Multiple Sports Scenes</h2>
+			<p>✉<a href="">Yutao Cui</a> &ensp; ✉<a href="">Xiaoyu Zhao</a> &ensp; ✉<a href="">Chenkai Zeng</a> &ensp; ✉<a href="">Yichun Yang</a></p>
+			<p>✉<a href="http://wanglimin.github.io/">Limin Wang</a></p>
+			<div style="height: 20px;"></div>
+			<p><a href="http://mcg.nju.edu.cn/en/index.html">MCG Group @ Nanjing University</a></p>
+			<div class="btn-wrap">
+				<a href="https://arxiv.org/abs/2304.05170" class="btn-accent">paper</a>
+				<a href="https://github.com/MCG-NJU/SportsMOT" class="btn-accent">github</a>
+			</div>
+		</div><!--banner-content-->
+		<figure>
+			<div style="height: 20px;"></div>
+			<img src="pics/sm_sports_mot.gif" alt="banner" class="banner-image">
+			<!-- <div style="height: 20px;"></div> -->
+			<!-- <small>The 25fps tubelets of bounding boxes and fine-grained action category annotations in the sample frames of MultiSports dataset. Multiple concurrent action situations frequently appear in MultiSports with many starting and ending points in the long untrimmed video clips. The frames are cropped and sampled by stride 5 or 7 for visualization propose. Tubes with the same color represent the same person.</small> -->
+		</figure> 
+	</div>
+</section>
+
+<button id="scrollToTopBtn">Top</button>
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Abstract</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Multi-object tracking in sports scenes plays a critical role in gathering players statistics, supporting further analysis, such as automatic tactical analysis. Yet existing MOT benchmarks cast little attention on the domain, limiting its development. In this work, we present a new large-scale multi-object tracking dataset in diverse sports scenes, coined as <i>SportsMOT</i>, where all players on the court are supposed to be tracked. It consists of 240 video sequences, over 150K frames (almost 15× MOT17) and over 1.6M bounding boxes (3× MOT17) collected from 3 sports categories, including basketball, volleyball and football. Our dataset is characterized with two key properties: 1) fast and variable-speed motion and 2) similar yet distinguishable appearance. We expect SportsMOT to encourage the MOT trackers to promote in both motion-based association and appearance-based association. We benchmark several state-of-the-art trackers and reveal the key challenge of SportsMOT lies in object association. To alleviate the issue, we further propose a new multi-object tracking framework, termed as <i>MixSort</i>, introducing a MixFormer-like structure as an auxiliary association model to prevailing tracking-by-detection trackers. By integrating the customized appearance-based association with the original motion-based association, MixSort achieves state-of-the-art performance on SportsMOT and MOT17. Based on MixSort, we give an in-depth analysis and provide some profound insights into SportsMOT.</p>
+						</div><!--description-->
+				</div>
+			</div><!--inner-content-->		
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Demo Video</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Please choose "1080P" for better experience.</p>
+						</div><!--description-->
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/2wbjsyg5zbI?si=1YulS2feGlWT-Vpe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div style="height: 20px;"></div>
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/C6QLjN7oVwA?si=LxLxbb3HitTsJiRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div style="height: 20px;"></div>
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/GxP0F2yhQhU?si=rI1VBoJOCaPVGNCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div style="height: 20px;"></div>
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/dlRZDiSTdyU?si=OTzUTvNQgxDSNuXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+				</div>
+			</div><!--inner-content-->		
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Data Collection</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>We provide 240 sports video clips of 3 categories (i.e., basketball, football and volleyball), where are collected from Olympic Games, NCAA Championship, and NBA on YouTube. Only the search results with 720P resolution, 25 FPS, and official recording are downloaded. All of the selected videos are cut into clips of average 485 frames manually, in which there is no shot change.</p>
+							<p>As for the diversity of video context, football games provide outdoor scenes and the rest results provide indoor scenes. Furthermore, the views of the playing courts do vary, which include common side view of crowded audience like in NBA, views from the serve zone in volleyball games, and aerial view in football games. Diverse scenes in our dataset will encourage the algorithms to generalize to different sports tracking settings.</p>
+							<p>There are a few examples as follows.</p>
+						</div><!--description-->
+						<figure>
+							<img src="pics/mot1.jpg" alt="category" style="width: 70%; height: auto;">
+						</figure>
+						<p style="text-align: center;">v_iIxMOsCGH58_c013</p>
+						<figure>
+							<img src="pics/mot2.jpg" alt="category" style="width: 70%; height: auto;">
+						</figure>
+						<p style="text-align: center;">v_4LXTUim5anY_c013</p>
+						<figure>
+							<img src="pics/mot31.jpg" alt="category" style="width: 70%; height: auto;">
+						</figure>
+						<p style="text-align: center;">v_2Dnx8BpgUEs_c007</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Dataset Statitics</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>There are 240 clips of the average 495 frames(19.8 seconds) in SportsMOT. We manually divide them into training, validation and test set, containing 45, 45, 150 videos respectively. It's guaranteed that every split does not have video clips from the same game.</p>
+							<h2 class="section-subtitle liner">Statistics of the annotations of 3 sports</h2>
+						</div>
+						<figure>
+							<img src="pics/mot4.png" alt="category" style="width: 80%; height: auto;">
+						</figure>
+						<div style="height: 30px;"></div>
+						<div class="detail-wrap">
+							<p>To measure the motion patterns of quantitatively, we introduce <i>fragment speed</i>.</p>
+							<p>We regard a track of identical ID, one start and one end point as a fragments. The speed of a fragment is the sum of center displacement between every 2 frames.</p>
+							<p>And we use <i>deformation rate</i> to measure the degree of deformation. Here, w<sub>min</sub> h<sub>min</sub> refer to the minimum width and height of bounding boxes in a track fragment.</p>
+						</div>
+						<figure>
+							<img src="pics/mot04071.png" alt="statistics" style="width: 40%; height: auto;">
+						</figure>
+						<div style="height: 30px;"></div>
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Distributions of the fragment speed in 3 sports in SportsMOT</h2>
+						</div>
+						<figure>
+							<img src="pics/mot5.png" alt="statistics" style="width: 50%; height: auto;">
+						</figure>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Rules</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p style="margin: 0;">• Other tracking datasets (e.g., MOT20/) used for pretraining are forbidden.</p>
+							<p>• Each team can have one or more members.</p>
+						</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Evaluation Metrics</h3>
+						</div>
+						<div class="detail-wrap">
+							<p>For our benchmark and challenge, we consider HOTA as the main metric. More specifically, this metric can be decomposed into two components: DetA and AssA, focusing on detection and association accuracy, respectively.</p>
+						</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Download</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Please refer to the huggingface page or the competition page to download the dataset for more information.</p>
+						</div>
+						<div class="btn-wrap">
+							<a href="https://huggingface.co/datasets/MCG-NJU/SportsMOT" class="btn-accent">hugging face</a>
+							<a href="https://codalab.lisn.upsaclay.fr/competitions/12424" class="btn-accent">competition</a>
+						</div>
+						<div style="height: 50px;"></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<div id="footer-bottom">
+	<div class="container">
+		<div class="grid">
+			<div class="copyright">
+				<p>© 2024 <a href="https://mcg.nju.edu.cn/">Multimedia Computing Group, Nanjing University.</a> All rights reserved.</p>
+			</div>
+		</div><!--grid-->	
+	</div>
+</div>
+
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/slideNav.min.js"></script>
+	<script src="js/slideNav.js"></script>
+	<script src="js/script.js"></script>	
+
+</body>
+</html>	

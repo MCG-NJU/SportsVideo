@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>SportsShot Dataset</title>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="author" content="">
+	    <meta name="keywords" content="">
+	    <meta name="description" content="">
+
+	    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
+	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<!-- script
+		================================================== -->
+		<script src="js/modernizr.js"></script>
+
+
+	</head>
+
+<body>
+
+<div id="header-wrap">
+	<header id="header">
+		<div class="container">
+			<div class="inner-content">
+				<div class="grid">
+					<div class="main-logo">
+						<a href="index.html"><img src="pics/sv.png" alt="logo"></a>
+					</div>
+
+					<nav id="navbar">
+						<div class="main-menu">
+							<ul class="menu-list">
+								<li class="menu-item"><a href="index.html" data-effect="Home">Home</a></li>
+								<li class="menu-item"><a href="SportsAction.html" data-effect="About">SportsAction</a></li>
+								<li class="menu-item"><a href="SportsMOT.html" data-effect="Services">SportsMOT</a></li>
+								<li class="menu-item"><a href="SportsHHI.html" data-effect="Projects">SportsHHI</a></li>
+								<li class="menu-item active"><a href="SportsShot.html" class="active" data-effect="Latest Blog">SportsShot</a></li>
+								<li class="menu-item"><a href="SportsGrounding.html" data-effect="Testimonial">SportsGrounding</a></li>
+								<!-- <li class="menu-item "><a href="https://templatesjungle.gumroad.com/l/creatify-digital-marketing-website-template" class="nav-link" > <b> GET PRO </b> </a></li> -->
+							</ul>
+
+							<div class="hamburger">
+				                <span class="bar"></span>
+				                <span class="bar"></span>
+				                <span class="bar"></span>
+				            </div>
+						</div>											
+					
+						<!-- <a href="#" class="btn-hvr-effect">
+							<span>Let's Talk</span>
+							<i class="icon icon-long-arrow-right"></i>
+						</a> -->
+						<!--search-bar-->
+
+					</nav>
+
+				</div>
+			</div>
+		</div>
+	</header>		
+</div><!--header-wrap-->
+
+<section id="billboard">
+	<div class="main-banner pattern-overlay">
+		<div class="banner-content" data-aos="fade-up">
+			<h3 class="banner-title">SportsShot Dataset</h3>
+		    <h2 class="section-subtitle ">SportsShot: A Fine-Grained Dataset for Shot Segmentation in Multiple Sports</h2>
+			<p>✉<a href="">Shiyan Ye</a> &ensp; ✉<a href="">Peiyao Shi</a> &ensp; ✉<a href="">Xuan Chen</a></p>
+			<p>✉<a href="http://mcg.nju.edu.cn/member/gswu/en/index.html">Gangshan Wu</a> &ensp; ✉<a href="http://wanglimin.github.io/">Limin Wang</a></p>
+			<div style="height: 20px;"></div>
+			<p><a href="http://mcg.nju.edu.cn/en/index.html">MCG Group @ Nanjing University</a></p>
+			<div class="btn-wrap">
+				<a href="" class="btn-accent">paper</a>
+				<a href="" class="btn-accent">github</a>
+			</div>
+		</div><!--banner-content-->
+		<figure>
+			<div style="height: 20px;"></div>
+			<img src="pics/SportsShot.gif" alt="banner" class="banner-image">
+			<!-- <div style="height: 20px;"></div> -->
+			<!-- <small>Compared with three relation instances from VidVRD and AG datasets showed in the upper row, the bottom row shows interaction annotations in two sample keyframes of <i>SportsHHI</i>. The bounding boxes and interaction annotation of the same instance are displayed in the same color. <i>SportsHHI</i> provides complex multi-person scenes where various interactions between human pairs occur concurrently. It focuses on high-level interactions that require detailed spatio-temporal context reasoning.</small> -->
+		</figure> 
+	</div>
+</section>
+
+<button id="scrollToTopBtn">Top</button>
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Abstract</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Shot segmentation is an important and challenging task in video understanding. The existing benchmarks either simply focus on shot boundary detection or lack well-defined shot categories for segmentation. In this paper, we present a new fine-grained dataset for shot segmentation as well as shot boundary detection in multiple sports scenes, coined as <i>SportsShot</i>. It consists of 1,200 sports videos, over 4M frames, and over 30K shot annotations. Our SportsShot is characterized with important properties of well-defined shot boundaries, fine-grained shot categories of complexity, and high-quality annotations with consistency, resulting in more challenges in both shot segmentation and boundary detection. In particular, we group the sports shot into seven semantic categories, including close-up, close shot, full view, audience, transition, zooming and others. These semantic categories are of great importance for the subsequent sport activity analysis. We adapt several shot segmentation baseline methods to our SportsShot and conduct error analysis and ablation studies for a better understanding of the key challenges. We hope our dataset can serve as a standard benchmark for shot segmentation and boundary detection in the future.</p>
+						</div><!--description-->
+						<div style="height: 20px;"></div>
+						<figure>
+							<img src="pics/shot11.png" alt="category" style="width: 75%; height: auto;">
+						</figure>
+				</div>
+			</div><!--inner-content-->		
+		</div>
+	</div>
+</section>
+
+
+<!-- <section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<h3 class="section-title">Demo Video</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Please choose "1080P" for better experience.</p>
+						</div>
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/2wbjsyg5zbI?si=1YulS2feGlWT-Vpe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div style="height: 20px;"></div>
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/C6QLjN7oVwA?si=LxLxbb3HitTsJiRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div style="height: 20px;"></div>
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/GxP0F2yhQhU?si=rI1VBoJOCaPVGNCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div style="height: 20px;"></div>
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/dlRZDiSTdyU?si=OTzUTvNQgxDSNuXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<h3 class="section-title">Data Construction</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Video collection</h2>
+							<p>Our SportsShot dataset focuses on sports scenes, so we search for volleyball, basketball, and football competition videos of levels like Olympics and World Cup on YouTube. These videos are recorded by professional high-definition cameras, guaranteeing excellent video quality. While selecting high quality videos from high-level competitions limits our video sources, our dataset covers complex and diverse shot changes and avoids problems like shaky footage that may cause blurred content. To ensure data balance across different sports, we manually select and cut these official competition records into 400 videos per sport. Each video clip is in high definition, with a minimum resolution of 720p, and a consistent frame rate of 25fps.</p>
+						</div>
+						<!-- <figure>
+							<img src="pics/hhi21.png" alt="category" style="width: 60%; height: auto;">
+						</figure>
+						<div style="height: 40px;"></div> -->
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Shot categories</h2>
+							<p>For the shot segmentation task, we define 7 shot categories with semantic information: <i>full view; close-up; close shot; audience; transition; zooming; other.</i></p>
+						</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Dataset Statistics</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Our SportsShot consists of 1200 videos from 147 competitions of three sports. The original videos are manually selected and cut into 400 videos per sport to keep data balance between sports. Each video is strictly limited to two to three minutes in length. </p>
+							<h2 class="section-subtitle liner">Comparison of annotations and statistics between the existing camera shot 
+								segmentation (boundary detection) datasets and our SportsShot</h2>
+						</div>
+						<figure>
+							<img src="pics/shot21.png" alt="category" style="width: 55%; height: auto;">
+						</figure>
+						<div style="height: 30px;"></div>
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Dataset statistics</h2>
+						</div>
+						<figure>
+							<img src="pics/shot3.png" alt="statistics" style="width: 80%; height: auto;">
+						</figure>
+						<div style="height: 30px;"></div>
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Statistics of shot duration in SportsShot with seven colors indicating seven shot
+								categories, where the x-axis is the number of seconds</h2>
+						</div>
+						<figure>
+							<img src="pics/shot4.png" alt="statistics" style="width: 90%; height: auto;">
+						</figure>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Evaluation metrics</h3>
+						</div>
+						<div class="detail-wrap">
+							<p>Since there are few references for the shot segmentation task, we use accuracy and segmental F1-scores to analyze segmentation performance following the standard practice in the temporal action segmentation task, in which accuracy evaluates the predictions in a frame-wise manner, while segmental F1-scores measure the temporal overlap between predicted and ground truth segments at different thresholds. For shot boundary detection, we utilize the precision, recall, and F1 scores, for it is important to detect shot boundaries both precisely and thoroughly.</p>
+						</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Download</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Please refer to the huggingface page or the competition page to download the dataset for more information.</p>
+						</div>
+						<div class="btn-wrap">
+							<a href="https://huggingface.co/datasets/SportsShot/SportsShot" class="btn-accent">hugging face</a>
+							<a href="https://codalab.lisn.upsaclay.fr/competitions/20982" class="btn-accent">competition</a>
+						</div>
+						<div style="height: 50px;"></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<div id="footer-bottom">
+	<div class="container">
+		<div class="grid">
+			<div class="copyright">
+				<p>© 2024 <a href="https://mcg.nju.edu.cn/">Multimedia Computing Group, Nanjing University.</a> All rights reserved.</p>
+			</div>
+		</div><!--grid-->	
+	</div>
+</div>
+
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/slideNav.min.js"></script>
+	<script src="js/slideNav.js"></script>
+	<script src="js/script.js"></script>	
+
+</body>
+</html>	

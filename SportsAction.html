@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>SportsAction Dataset</title>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="author" content="">
+	    <meta name="keywords" content="">
+	    <meta name="description" content="">
+
+	    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
+	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<!-- script
+		================================================== -->
+		<script src="js/modernizr.js"></script>
+
+
+	</head>
+
+<body>
+
+<div id="header-wrap">
+	<header id="header">
+		<div class="container">
+			<div class="inner-content">
+				<div class="grid">
+					<div class="main-logo">
+						<a href="index.html"><img src="pics/sv.png" alt="logo"></a>
+					</div>
+
+					<nav id="navbar">
+						<div class="main-menu">
+							<ul class="menu-list">
+								<li class="menu-item"><a href="index.html" data-effect="Home">Home</a></li>
+								<li class="menu-item active"><a href="SportsAction.html" class="active" data-effect="About">SportsAction</a></li>
+								<li class="menu-item"><a href="SportsMOT.html" data-effect="Services">SportsMOT</a></li>
+								<li class="menu-item"><a href="SportsHHI.html" data-effect="Projects">SportsHHI</a></li>
+								<li class="menu-item"><a href="SportsShot.html" data-effect="Latest Blog">SportsShot</a></li>
+								<li class="menu-item"><a href="SportsGrounding.html" data-effect="Testimonial">SportsGrounding</a></li>
+								<!-- <li class="menu-item "><a href="https://templatesjungle.gumroad.com/l/creatify-digital-marketing-website-template" class="nav-link" > <b> GET PRO </b> </a></li> -->
+							</ul>
+
+							<div class="hamburger">
+				                <span class="bar"></span>
+				                <span class="bar"></span>
+				                <span class="bar"></span>
+				            </div>
+						</div>											
+					
+						<!-- <a href="#" class="btn-hvr-effect">
+							<span>Let's Talk</span>
+							<i class="icon icon-long-arrow-right"></i>
+						</a> -->
+						<!--search-bar-->
+
+					</nav>
+
+				</div>
+			</div>
+		</div>
+	</header>		
+</div><!--header-wrap-->
+
+<section id="billboard">
+	<div class="main-banner pattern-overlay">
+		<div class="banner-content" data-aos="fade-up">
+			<h3 class="banner-title">SportsAction Dataset</h3>
+		    <h2 class="section-subtitle ">MultiSports: A Multi-Person Video Dataset of Spatio-Temporally Localized Sports Actions</h2>
+			<p>✉<a href="https://yixuanli98.github.io/">Yixuan Li</a> &ensp; ✉<a href="https://github.com/MiaSanLei">Lei Chen</a> &ensp; ✉<a href="https://judie1999.github.io/">Runyu He</a> &ensp; ✉<a href="https://github.com/zhenzhiwang">Zhenzhi Wang</a></p>
+			<p>✉<a href="http://mcg.nju.edu.cn/member/gswu/en/index.html">Gangshan Wu</a> &ensp; ✉<a href="http://wanglimin.github.io/">Limin Wang</a></p>
+			<div style="height: 20px;"></div>
+			<p><a href="http://mcg.nju.edu.cn/en/index.html">MCG Group @ Nanjing University</a></p>
+			<div class="btn-wrap">
+				<a href="https://arxiv.org/abs/2105.07404" class="btn-accent">paper</a>
+				<a href="https://github.com/MCG-NJU/MultiSports/" class="btn-accent">github</a>
+			</div>
+		</div><!--banner-content-->
+		<figure>
+			<img src="pics/sa_ms_visual_min.png" alt="banner" class="banner-image">
+			<div style="height: 20px;"></div>
+			<small>The 25fps tubelets of bounding boxes and fine-grained action category annotations in the sample frames of MultiSports dataset. Multiple concurrent action situations frequently appear in MultiSports with many starting and ending points in the long untrimmed video clips. The frames are cropped and sampled by stride 5 or 7 for visualization propose. Tubes with the same color represent the same person.</small>
+		</figure> 
+	</div>
+</section>
+
+<button id="scrollToTopBtn">Top</button>
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Abstract</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Spatio-temporal action detection is an important and challenging problem in video understanding. The existing action detection benchmarks are limited in aspects of small numbers of instances in a trimmed video or low-level atomic actions. This paper aims to present a new multi-person dataset of spatio-temporal localized sports actions, coined as <i>MultiSports</i>. We first analyze the important ingredients of constructing a realistic and challenging dataset for spatio-temporal action detection by proposing three criteria: (1) multi-person scenes and motion dependent identification, (2) with well-defined boundaries, (3) relatively fine-grained classes of high complexity. Based on these guidelines, we build the dataset of MultiSports v1.0 by selecting 4 sports classes, collecting 3200 video clips, and annotating 37701 action instances with 902k bounding boxes. Our datasets are characterized with important properties of high diversity, dense annotation, and high quality. Our MultiSports, with its realistic setting and detailed annotations, exposes the intrinsic challenges of spatio-temporal action detection. To benchmark this, we adapt several baseline methods to our dataset and give an in-depth analysis on the action detection results in our dataset. We hope our MultiSports can serve as a standard benchmark for spatio-temporal action detection in the future.</p>
+						</div><!--description-->
+				</div>
+			</div><!--inner-content-->		
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Demo Video</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Please choose "1080P" for better experience. <a href="https://www.youtube.com/embed/uGjvKYWZ5Ww">[<u>link</u>]</a></p>
+						</div><!--description-->
+						<div class="iframe-container">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/uGjvKYWZ5Ww?si=s_Qy-AZSYBvBoc8z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+				</div>
+			</div><!--inner-content-->		
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Hierarchy of Action Category</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>The action vocabulary hierarchy and annotator interface of the <i>MultiSports</i> dataset. Our <i>MultiSports</i> has a two-level hierarchy of action vocabularies, where the actions of each sport are fine-grained.</p>
+						</div><!--description-->
+						<figure>
+							<img src="pics/sa_ms_hier1.png" alt="category">
+						</figure>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Dataset Statitics</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Our <i>MultiSports</i> contains 66 fine-grained action categories from four different sports, selected from 247 competition records. The records are manually cut into 800 clips per sport to keep the balance of data size between sports, where we discard intervals with only background scenes, such as award, and select the highlights of competitions as video clips for action localization.</p>
+							<p>Overall comparison of statistics between existing action localization datasets and our <i>MultiSports</i> v1.0. (* only train and val sets' ground-truths are available, † number of person tracklets, each of which has one or more action labels, ‡ 1fps action annotations have no clear action boundaries)</p>
+						</div>
+						<figure>
+							<img src="pics/sa_ms_comp1.png" alt="category" style="width: 50%; height: auto;">
+						</figure>
+						<div style="height: 30px;"></div>
+						<div class="detail-wrap">
+							<p>Statistics of each action class's data size in <i>MultiSports</i> sorted by descending order with 4 colors indicating 4 different sports. For actions in the different sports sharing the same name, we add the name of sports after them. The natural long-tailed distribution of action categories raises new challenges for action localization models.</p>
+						</div>
+						<figure>
+							<img src="pics/sa_ms_num_inst1.png" alt="statistics">
+						</figure>
+						<div style="height: 30px;"></div>
+						<div class="detail-wrap">
+							<p>Statistics of action instance duration in <i>MultiSports</i>, where the x-axis is the number of frames and we count all instances longer than 95 frames in the last bar. Our action instances have a large variance in duration, resulting in challenges in modeling varying temporal structures.</p>
+						</div>
+						<figure>
+							<img src="pics/sa_ms_interval1.png" alt="statistics" style="width: 50%; height: auto;">
+						</figure>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Experiment Results</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Comparison of SOTA methods</h2>
+						</div>
+						<figure>
+							<img src="pics/sa_ms_sota1.png" alt="category" style="width: 80%; height: auto;">
+						</figure>
+						<div style="height: 40px;"></div>
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Comparison between SlowFast and SlowOnly</h2>
+						</div>
+						<figure>
+							<img src="pics/sa_ms_slowonly_slowfast_AP1.png" alt="category" style="width: 90%; height: auto;">
+						</figure>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="inner-content">
+				<div class="abstract-entry" data-aos="fade-up">
+						<div class="section-header">
+							<!-- <h2 class="section-subtitle liner">About Us</h2> -->
+							<h3 class="section-title">Download</h3>
+						</div>
+
+						<div class="detail-wrap">
+							<p>Please refer to the huggingface page or the competition page to download the dataset for more information.</p>
+						</div>
+						<div class="btn-wrap">
+							<a href="https://huggingface.co/datasets/MCG-NJU/MultiSports" class="btn-accent">hugging face</a>
+							<a href="https://codalab.lisn.upsaclay.fr/competitions/3736" class="btn-accent">competition</a>
+						</div>
+						<div style="height: 50px;"></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<div id="footer-bottom">
+	<div class="container">
+		<div class="grid">
+			<div class="copyright">
+				<p>© 2024 <a href="https://mcg.nju.edu.cn/">Multimedia Computing Group, Nanjing University.</a> All rights reserved.</p>
+			</div>
+		</div><!--grid-->	
+	</div>
+</div>
+
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/slideNav.min.js"></script>
+	<script src="js/slideNav.js"></script>
+	<script src="js/script.js"></script>	
+
+</body>
+</html>	
