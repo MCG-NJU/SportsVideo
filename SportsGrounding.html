@@ -106,7 +106,7 @@
 						</div>
 
 						<div class="detail-wrap">
-							<p>Given natural language queries and video clips, spatio-temporal video grounding task aims to output the most relevant segments and locate the corresponding regions in video clips. However, existing datasets have limited content regarding human actions and do not cover multi-person scenes. In this work, we propose a spatio-temporal video grounding dataset for sports videos, coined as <i>SportsGrounding</i>. We analyze the important components for constructing a realistic and challenging dataset for spatio-temporal video grounding by proposing two criteria: (1) grounding in multi-person scenes and motion-dependent contexts, and (2) well-defined boundaries. Based on these guidelines, we build the SportsGrounding v1.0 dataset by collecting 526 video clips of basketball category and annotating 4,479 instances with 113k bounding boxes. To benchmark this dataset, we adapt several baseline methods and provide an in-depth analysis of the results. We hope that our SportsGrounding will contribute to advancements in future methods in this field.</p>
+							<p>Given natural language queries and video clips, spatio-temporal video grounding task aims to output the most relevant segments and locate the corresponding regions in video clips. However, existing datasets have limited content regarding human actions and do not cover multi-person scenes. In this work, we propose a spatio-temporal video grounding dataset for sports videos, coined as <i>SportsGrounding</i>. We analyze the important components for constructing a realistic and challenging dataset for spatio-temporal video grounding by proposing two criteria: (1) grounding in multi-person scenes and motion-dependent contexts, and (2) well-defined boundaries. Based on these guidelines, we build the SportsGrounding v1.0 dataset by collecting 526 video clips of basketball category and annotating 4,243 instances with 159k bounding boxes. To benchmark this dataset, we adapt several baseline methods and provide an in-depth analysis of the results. We hope that our SportsGrounding will contribute to advancements in future methods in this field.</p>
 						</div><!--description-->
 				</div>
 			</div><!--inner-content-->		
@@ -159,7 +159,7 @@
 						</div>
 
 						<div class="detail-wrap">
-							<p>We provide 526 sports clips in the basketball category, utilizing video data from the MultiSports dataset, which are collected from the Olympic Games, NCAA Championship, and NBA on YouTube. We merge adjacent annotated instances of the same subject and provide corresponding natural language descriptions. These descriptions are unique throughout the video clip and clearly describe the visual attributes of the subjects (such as clothing, position, etc.), actions, and relationships, while also encouraging the interaction descriptions involving other individuals and relevant subjects on the court.</p>
+							<p>SportsGrounding is based on the basketball subset of the MultiSports dataset, focusing on basketball-related scenarios, which are collected from the Olympic Games, NCAA Championship, and NBA on YouTube. Six videos with excessive repetitive actions that cannot be distinguished by natural language are removed, resulting in a total of 520 videos. It follows the train/val split of MultiSports, with 374 videos in the training set and 146 videos in the validation set. Unlike other STVG datasets, each video in SportsGrounding contains multiple captions describing different target persons.We merge adjacent annotated instances of the same subject and provide corresponding natural language descriptions. These descriptions are unique throughout the video clip and clearly describe the visual attributes of the subjects (such as clothing, position, etc.), actions, and relationships, while also encouraging the interaction descriptions involving other individuals and relevant subjects on the court.</p>
 						</div>
 				</div>
 			</div>	
@@ -182,7 +182,7 @@
 							<h2 class="section-subtitle liner">Overall comparison of statistics between existing spatio-temporal video grounding datasets and our SportsGrounding v1.0</h2>
 						</div>
 						<figure>
-							<img src="pics/sg2.png" alt="category" style="width: 65%; height: auto;">
+							<img src="pics/sg21.png" alt="category" style="width: 65%; height: auto;">
 						</figure>
 						<div style="height: 20px;"></div>
 						<div class="detail-wrap">
@@ -197,6 +197,16 @@
 						</figure>
 						<div class="detail-wrap">
 							<p>The duration of instances in the SportsGrounding dataset ranges from approximately 0.2 seconds to over 16 seconds. Compared to the VidSTG and HC-STVG datasets, the duration differences between annotated instances in the SportsGrounding dataset are more pronounced, with generally shorter segment durations, which presents a greater challenge for spatio-temporal grounding.</p>
+						</div>
+						<div style="height: 20px;"></div>
+						<div class="detail-wrap">
+							<h2 class="section-subtitle liner">Unique Characteristics of SportsGrounding</h2>
+						</div>
+						<div class="detail-wrap">
+							<p>•&nbsp;&nbsp;&nbsp;&nbsp;Some instances have very short durations.<br>
+								•&nbsp;&nbsp;&nbsp;&nbsp;More people appear in the videos (other datasets contain fewer people even in multi-person scenarios; 57.2% of videos in HC-STVG have more than 3 people, and the rest have 2 people).<br>
+								•&nbsp;&nbsp;&nbsp;&nbsp;More complex interactions between people; many descriptions require certain reasoning and scene information modeling. Example: "The defender in white is blocked by the teammate of this offensive player."
+							</p>
 						</div>
 				</div>
 			</div>	
@@ -253,7 +263,7 @@
 	<div class="container">
 		<div class="grid">
 			<div class="copyright">
-				<p>© 2024 <a href="https://mcg.nju.edu.cn/">Multimedia Computing Group, Nanjing University.</a> All rights reserved.</p>
+				<p>© 2026 <a href="https://mcg.nju.edu.cn/">Multimedia Computing Group, Nanjing University.</a> All rights reserved.</p>
 			</div>
 		</div><!--grid-->	
 	</div>
